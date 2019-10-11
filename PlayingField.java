@@ -16,11 +16,11 @@ import java.awt.Rectangle;
  */
 public class PlayingField {
     private int height, width, x, y;
-    private Rectangle bounds;
+    public static Rectangle bounds;
     private Color color;
     
     public PlayingField(int cWidth, int cHeight) {
-        this.height =  325;
+        this.height =  331;
         this.width = 540;
         this.x = 25;
         this.y = 25;
@@ -35,6 +35,25 @@ public class PlayingField {
     public void setBounds(Rectangle bounds) {
         this.bounds = bounds;
     }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
+    }
+
+    public int getWidth() {
+        return width;
+    }
+
+    public void setWidth(int width) {
+        this.width = width;
+    }
+
+    
+    
     
     public void draw(Graphics g) {
         g.setColor(this.color);

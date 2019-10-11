@@ -24,7 +24,7 @@ public class JavaSnake {
         World c = new World();
         j.add(c);
         j.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        j.setSize(600, 400);
+        j.setSize(600, 410);
         j.setVisible(true);
         j.setLocationRelativeTo(null);
         j.addKeyListener(new KeyAdapter() {
